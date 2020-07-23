@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task | Tech Karo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/9e2213edf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    
+    <header>
+        <div class="leftNav">
+            <a href="#">whatthefork.is</a>
+            <span> a closure</span>
+        </div>
+        
+        <div  class="rightNav" id="icons">
+            <i class="fas fa-moon" onclick="changeTheme()"></i>
+        </div>
+        
+    </header>
+    
+    <main>
+            <article>
+                <!-- Main Content -->
+                <div class="content">
+                    <p>Closures are confusing because they are an “invisible” concept.</p>
+                    <p>When you use an object, a variable, or a function, you do this intentionally. You think: “I’m gonna need a variable here,” and add it to your code.</p>
+                    <p>Closures are different. By the time most people approach closures, they have already used them unknowingly many times — and it is likely that this is true for yourself, too. So learning closures is less about understanding a new concept and more about recognizing something you have already been doing for a while.</p>
+                    
+                    <a href="#"><h1>tl;dr</h1></a>
+                    <p>You have a closure when a function accesses variables defined outside of it.</p>
+                    <p>For example, this code snippet contains a closure:</p>
+                    <p>Notice how user => user.startsWith(query) is itself a function. It uses the query variable. But the query variable is defined outside of that function. That’s a closure.</p>
+                    <hr>
+                    <p><b>You can stop reading here, if you want.</b> The rest of this article approaches closures in a different way. Instead of explaining what a closure is, it will walk you through the process of discovering closures — like the first programmers did in the 1960s.</p>
+                    <hr>
+                    <a href="#"><h1>Step 1: Functions Can Access Outside Variables</h1></a>
+                    <p>To understand closures, we need to be somewhat familiar with variables and functions. In this example, we declare the food variable inside the eat function:</p>
+                    <p>But what if we wanted to later change the food variable outside of the eat function? To do this, we can move the food variable itself out of our function into the top level:</p>
+                    <p>This lets us change the food “from the outside” any time that we want to:</p>
+                    <p>In other words, the food variable is no longer local to our eat function, but our eat function nevertheless has no trouble accessing it. <b>Functions can access variables outside of them.</b> Stop for a second and make sure that you have no problem with this idea. Once it has settled comfortably in your brain, move to the second step.</p>
+                </div>
+
+                <!-- Footer -->
+                <footer>
+                    <div class="upper-footer">
+                        <div class="footer-left">
+                            <a href="#">justjavascript</a>
+                            <a href="#">overreacted</a>
+                        </div>
+                        <div class="footer-right">
+                            <a href="#">rss</a>
+                        </div>
+                    </div>
+                    <div class="after-footer">
+                        <a href="#"> curse mirror</a>
+                    </div>
+
+                </footer>
+
+            </article>
+                
+            </main>
+
+        <script src="./js/script.js"></script>
+</body>
+</html>
