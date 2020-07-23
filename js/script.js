@@ -6,6 +6,7 @@ function changeTheme(){
     footerColor();
     let backGround = document.body.style.backgroundColor="#000000";
     let spanColor = document.querySelector('.leftNav span').style.color = "#FFE77A";
+    let iColor = document.querySelector('.rightNav i').style.backgroundColor = "#000000";
     let headerColor = document.querySelector('header').style.backgroundColor = "#000000";
 }
 

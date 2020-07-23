@@ -60,12 +60,10 @@ header a{
     padding: .8rem;
     cursor: pointer;
     transition: .5s ease background-color;
-}
-
-.rightNav i:hover{
     background-color: #f3f3f3;
     border-radius: 4px;
 }
+
 
 main{
     display: flex;
