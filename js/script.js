@@ -13,7 +13,7 @@ function changeTheme(){
 
 function changeIcon(){
     let changeIcon = document.getElementById('icons');
-    changeIcon.innerHTML = `<i class="fas fa-sun"></i>`;
+    changeIcon.innerHTML = `<i class="fas fa-sun" onclick="revertChanges()"></i>`;
     changeIcon.style.color = "#FFFFFF"  
 }
 
@@ -41,6 +41,11 @@ function footerColor(){
         footColor[i].style.color = "#888888";
     }
 }
+
+// Back To Original
+function revertChanges() { 
+    window.location = "index.html";
+  }
 
 
 
